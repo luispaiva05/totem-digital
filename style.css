@@ -1,0 +1,230 @@
+/* ============================
+   RESET BÁSICO
+============================ */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #e8f0fe;
+  display: flex;
+  flex-direction: row;
+}
+
+/* ============================
+   MENU LATERAL
+============================ */
+.menu-lateral {
+  width: 220px;
+  background-color: #004aad;
+  color: white;
+  min-height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding-top: 20px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+  z-index: 10;
+}
+
+.menu-lateral h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.menu-lateral button.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.menu-lateral ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-lateral li {
+  margin: 10px 0;
+}
+
+.menu-lateral a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  transition: background 0.3s;
+}
+
+.menu-lateral a:hover,
+.menu-lateral a.active {
+  background-color: #005fe3;
+}
+
+.menu-lateral i {
+  margin-right: 10px;
+}
+
+/* ============================
+   CONTEÚDO PRINCIPAL
+============================ */
+main {
+  margin-left: 240px;
+  padding: 20px;
+  flex-grow: 1;
+}
+
+header {
+  text-align: center;
+  background-color: #004aad;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+section {
+  background-color: white;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #004aad;
+}
+
+/* ============================
+   MAPA
+============================ */
+.mapa-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  border: 2px solid #004aad;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* ============================
+   RODAPÉ
+============================ */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #004aad;
+  color: white;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+/* ============================
+   LINKS CLICÁVEIS
+============================ */
+.evento, .turismo {
+  cursor: pointer;
+  color: #004aad;
+  text-decoration: underline;
+}
+
+/* ============================
+   MODAL
+============================ */
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.modal.show {
+  display: block;
+  opacity: 1;
+}
+
+.modal-content {
+  background-color: white;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+  transform: translateY(-50px);
+  transition: transform 0.3s ease;
+}
+
+.modal.show .modal-content {
+  transform: translateY(0);
+}
+
+.close {
+  color: #004aad;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #005fe3;
+}
+
+#modal-mapa {
+  display: inline-block;
+  margin-top: 15px;
+  background-color: #004aad;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+#modal-mapa:hover {
+  background-color: #005fe3;
+}
+
+/* ============================
+   RESPONSIVIDADE
+============================ */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  .menu-lateral {
+    width: 100%;
+    position: relative;
+    min-height: auto;
+  }
+
+  .menu-lateral ul {
+    display: none;
+  }
+
+  .menu-lateral ul.show {
+    display: block;
+  }
+
+  main {
+    margin-left: 0;
+  }
+
+  .menu-lateral button.menu-toggle {
+    display: block;
+    margin-bottom: 10px;
+  }
+}

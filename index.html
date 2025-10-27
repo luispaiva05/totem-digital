@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Praça Sérgio Pacheco</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- MENU LATERAL / TOPO -->
+  <aside class="menu-lateral" id="menu">
+    <h2>Menu</h2>
+    <button class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></button>
+    <ul>
+      <li><a href="#inicio"><i class="fas fa-map"></i> Início</a></li>
+      <li><a href="#eventos"><i class="fas fa-calendar-alt"></i> Eventos</a></li>
+      <li><a href="#onibus"><i class="fas fa-bus"></i> Ônibus</a></li>
+      <li><a href="#turismo"><i class="fas fa-camera"></i> Turismo</a></li>
+      <li><a href="#historia"><i class="fas fa-landmark"></i> História</a></li>
+    </ul>
+  </aside>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main>
+    <header>
+      <h1>Praça Sérgio Pacheco</h1>
+    </header>
+
+    <!-- INÍCIO / MAPA -->
+    <section id="inicio">
+      <h2>Bem-vindo à Praça Sérgio Pacheco</h2>
+      <p>Explore o coração de Uberlândia! Veja o mapa interativo abaixo com as principais atrações da praça:</p>
+      <div class="mapa-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.4108430037395!2d-48.27972952479187!3d-18.915644282263067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a4459a4a1d073b%3A0x6a1b4fd5fa5d1cdd!2sPra%C3%A7a%20S%C3%A9rgio%20Pacheco%20-%20Centro%2C%20Uberl%C3%A2ndia%20-%20MG!5e0!3m2!1spt-BR!2sbr!4v1730040000000!5m2!1spt-BR!2sbr"
+          width="100%"
+          height="400"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+
+    <!-- EVENTOS -->
+    <section id="eventos">
+      <h2>Próximos Eventos</h2>
+      <ul>
+        <li><a href="#" class="evento" 
+               data-titulo="Feira Cultural - 5 de Novembro" 
+               data-descricao="A Feira Cultural da Praça Sérgio Pacheco é um evento anual que celebra a arte, a música e o artesanato local. Desde sua criação na década de 1990, tornou-se um ponto de encontro de artistas e visitantes de Uberlândia. O evento ocorre durante um fim de semana de Novembro e oferece apresentações musicais, oficinas culturais, barracas de produtos artesanais e gastronômicos, promovendo a integração da comunidade e valorizando a cultura regional."
+               data-mapa="https://goo.gl/maps/abcdef123">🎶 Feira Cultural - 5 de Novembro</a></li>
+        <li><a href="#" class="evento" 
+               data-titulo="Caminhada da Saúde - 10 de Novembro" 
+               data-descricao="A Caminhada da Saúde é organizada pela Prefeitura e associações de saúde locais com o objetivo de incentivar a prática de atividades físicas e hábitos saudáveis. O percurso passa pelo Calçadão da Praça e áreas adjacentes, reunindo famílias, estudantes e profissionais de saúde. Além do exercício físico, são promovidas palestras sobre bem-estar, nutrição e prevenção de doenças."
+               data-mapa="https://goo.gl/maps/ghijkl456">🏃 Caminhada da Saúde - 10 de Novembro</a></li>
+        <li><a href="#" class="evento" 
+               data-titulo="Natal na Praça - 20 de Dezembro" 
+               data-descricao="O Natal na Praça Sérgio Pacheco é uma celebração anual que transforma o espaço em um verdadeiro cenário natalino, com iluminação especial, árvore de Natal gigante, apresentações musicais e teatro de bonecos. Desde a década de 2000, o evento atrai milhares de visitantes, consolidando-se como uma tradição local que une comércio, cultura e lazer para todas as idades."
+               data-mapa="https://goo.gl/maps/mnopqr789">🎄 Natal na Praça - 20 de Dezembro</a></li>
+      </ul>
+    </section>
+
+    <!-- ÔNIBUS -->
+    <section id="onibus">
+      <h2>Pontos de Ônibus</h2>
+      <p>A Praça Sérgio Pacheco é um importante ponto de integração do transporte público de Uberlândia.</p>
+      <ul>
+        <li>Linha 101 - Terminal Central</li>
+        <li>Linha 220 - Shopping Park</li>
+        <li>Linha 350 - Luizote</li>
+      </ul>
+    </section>
+
+    <!-- TURISMO -->
+    <section id="turismo">
+      <h2>Pontos Turísticos Próximos</h2>
+      <ul>
+        <li><a href="#" class="turismo" 
+               data-titulo="Praça Clarimundo Carneiro" 
+               data-descricao="A Praça Clarimundo Carneiro é famosa por sua arborização e pelo coreto histórico, palco de apresentações musicais e eventos culturais semanais. Inaugurada na década de 1970, tornou-se um ponto de lazer e convivência para a população, mantendo a tradição de encontros comunitários, feiras e apresentações artísticas."
+               data-mapa="https://goo.gl/maps/stuvwx123">🌳 Praça Clarimundo Carneiro</a></li>
+        <li><a href="#" class="turismo" 
+               data-titulo="Museu Municipal de Uberlândia" 
+               data-descricao="O Museu Municipal de Uberlândia abriga um acervo rico sobre a história e cultura da cidade, com destaque para documentos, fotografias e obras de artistas locais. Criado na década de 1980, o museu promove exposições temporárias, workshops e visitas educativas para escolas, consolidando-se como referência cultural e histórica da região."
+               data-mapa="https://goo.gl/maps/yzabcd456">🏛️ Museu Municipal de Uberlândia</a></li>
+        <li><a href="#" class="turismo" 
+               data-titulo="Teatro Municipal" 
+               data-descricao="O Teatro Municipal de Uberlândia é um espaço destinado à apresentação de peças teatrais, concertos musicais e eventos de dança. Inaugurado na década de 1990, o teatro possui programação diversificada, oferecendo atividades culturais para a comunidade e sendo um ponto central na vida artística da cidade."
+               data-mapa="https://goo.gl/maps/efghij789">🎭 Teatro Municipal</a></li>
+      </ul>
+    </section>
+
+    <!-- HISTÓRIA -->
+    <section id="historia">
+      <h2>História da Praça Sérgio Pacheco</h2>
+
+      <p>
+        A área hoje ocupada pela Praça Sérgio Pacheco está intimamente ligada ao processo de expansão e reestruturação urbana de Uberlândia.
+        Originalmente, ali funcionava o pátio e estação da <strong>Companhia Mogiana de Estradas de Ferro</strong>, terreno que por décadas delimitou o crescimento da malha urbana.
+      </p>
+
+      <p>
+        Na década de 1960, com o deslocamento das operações ferroviárias e a cessão do terreno pela Mogiana à Prefeitura, abriu-se a oportunidade para conceber um grande espaço público no coração da cidade.
+      </p>
+
+      <h3>Projetos e Construção</h3>
+      <p>
+        O primeiro esboço do projeto data de <strong>1962</strong>, assinado pelo arquiteto <strong>João Jorge Coury</strong>, prevendo rodoviária, hotel, prefeitura e Câmara Municipal, além de áreas de lazer — mas o plano sofreu alterações e só avançou parcialmente.
+      </p>
+
+      <p>
+        Em <strong>1972</strong>, sob a gestão do prefeito <strong>Virgílio Galassi</strong>, um segundo plano ampliou a ambição: o local passaria a abrigar não apenas lazer, mas também funções administrativas, biblioteca, correios e centro cultural.
+        Contudo, mudanças políticas e econômicas fizeram com que o foco principal se tornasse o espaço de convivência.
+      </p>
+
+      <h3>Inauguração</h3>
+      <p>
+        Em <strong>novembro de 1976</strong>, a praça foi oficialmente inaugurada como área de lazer urbana — com lago, espelho-d’água, mais de mil árvores, canteiros elevados para abafar o ruído externo e acesso público — embora muitos dos elementos previstos não tenham sido implementados ou depois tenham sido modificados.
+      </p>
+
+      <h3>Transformações ao Longo do Tempo</h3>
+      <p>
+        Nos anos seguintes, o espaço passou por sucessivas transformações: o espelho-d’água foi aterrado, canteiros foram reconfigurados e a inserção de vias de tráfego e terminal urbano modificou a dinâmica de uso original do projeto.
+      </p>
+
+      <p>
+        Desde então, a <strong>Praça Sérgio Pacheco</strong> consolidou-se como ponto central de convivência, lazer e mobilidade urbana:
+        é palco de feiras, eventos culturais, caminhadas e atividades comunitárias, além de estar cercada por comércio, bancos e serviços.
+      </p>
+
+      <h3>A Praça Hoje</h3>
+      <p>
+        A manutenção e revitalização são constantes: em <strong>2021</strong>, por exemplo, houve pintura, substituição de grama e reformas de bancos e quadras, reforçando o compromisso da prefeitura com a preservação desse importante espaço público.
+      </p>
+
+      <p>
+        Em síntese, a história da Praça Sérgio Pacheco reflete a trajetória de Uberlândia: de um espaço ferroviário no limiar do centro da cidade, a um parque urbano e local de encontro, adaptando-se às mudanças urbanísticas, sociais e políticas ao longo do tempo.
+      </p>
+
+      <small>
+        <em>Fontes: Prefeitura de Uberlândia, Jornal Integra Notícias, Revista Geografares.</em>
+      </small>
+    </section>
+    <footer>
+      <p>Totem Digital - Praça Sérgio Pacheco © 2025</p>
+    </footer>
+  </main>
+
+  <!-- MODAL PARA DETALHES -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3 id="modal-titulo"></h3>
+      <p id="modal-descricao"></p>
+      <a href="#" id="modal-mapa" target="_blank">Ver no mapa</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
